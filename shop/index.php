@@ -1,5 +1,6 @@
 <?php
 error_reporting(E_ALL);
+header("Content-type: text/html; charset=utf-8"); 
 // change the following paths if necessary
 $yii=dirname(__FILE__).'/../framework/yii.php';
 $config=dirname(__FILE__).'/protected/config/main.php';
