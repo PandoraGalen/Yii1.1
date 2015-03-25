@@ -4,6 +4,8 @@ class AdminModule extends CWebModule
 {
 	public function init()
 	{
+		//自定义后台默认控制器
+		$this -> defaultController = "index";
 		// this method is called when the module is being created
 		// you may place code here to customize the module or the application
 
@@ -11,6 +13,13 @@ class AdminModule extends CWebModule
 		$this->setImport(array(
 			'admin.models.*',
 			'admin.components.*',
+		));
+
+		//为后台登录管理员设置session名字前缀信息
+		Yii::app()->setComponents(array(
+		    'user'=>array(
+		        'stateKeyPrefix' =>'admin',
+		    )
 		));
 	}
 

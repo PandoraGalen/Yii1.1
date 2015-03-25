@@ -9,8 +9,7 @@ class LoginForm extends CFormModel
 {
 	public $username;
 	public $password;
-	public $rememberMe;
-	public $verifyCode; //验证码属性
+        
 	private $_identity;
 
 	/**
@@ -24,15 +23,10 @@ class LoginForm extends CFormModel
 			// username and password are required
 			array('username', 'required','message'=>'用户名必填'),
 			array('password', 'required','message'=>'密码必填'),
-			// rememberMe needs to be a boolean
-			array('rememberMe', 'boolean'),
 			// password needs to be authenticated
 			//array('password', 'authenticate'),
             //校验用户名和密码的真实性,通过自定义方法实现校验
             array('password','authenticate'),
-            
-            //对验证码进行校验
-            array('verifyCode','captcha','message'=>'请输入正确的验证码'),
 		);
 	}
 	/**
@@ -43,7 +37,7 @@ class LoginForm extends CFormModel
 	{
 		if(!$this->hasErrors())
 		{
-			$this->_identity=new UserIdentity($this->username,($this->password));
+			$this->_identity=new UserIdentity($this->username,$this->password);
 			if(!$this->_identity->authenticate())
 				$this->addError('password','用户名或密码不存在');
 		}
@@ -55,9 +49,7 @@ class LoginForm extends CFormModel
 	{
 		return array(
                     'username'=>'用户名',
-                    'password'=>'密  码',
-                    'verifyCode'=>'验证码',
-                    'rememberMe'=>'记住登录状态',
+                    'password'=>'密&nbsp;&nbsp;&nbsp;&nbsp;码',
 		);
 	}
 
@@ -76,7 +68,7 @@ class LoginForm extends CFormModel
 		}
 		if($this->_identity->errorCode===UserIdentity::ERROR_NONE)
 		{
-			$duration=$this->rememberMe ? 3600*24*30 : 0; // 30 days
+			$duration=0;//$this->rememberMe ? 3600*24*30 : 0; // 30 days
 			Yii::app()->user->login($this->_identity,$duration);
 			return true;
 		}

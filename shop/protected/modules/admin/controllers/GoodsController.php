@@ -51,7 +51,7 @@ class GoodsController extends Controller {
         $goods_model = Goods::model();
         //1.获得商品总的记录数目
         $cnt = $goods_model->count();
-        $per = 6;
+        $per = 3;
 
         // //2. 实例化分页类对象
          $page = new Pagination($cnt, $per);
