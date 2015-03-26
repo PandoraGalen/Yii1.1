@@ -13,4 +13,6 @@ return array(
 	//把数据表的前缀设置好
     'tablePrefix'=>'sw_',
     'enableParamLogging'=>true,
+    //显示每个sql语句运行时间
+    'enableProfiling'=>true,
 );

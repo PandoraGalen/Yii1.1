@@ -31,6 +31,8 @@ class UserController extends Controller{
      *用户登录 
      */
     function actionLogin(){
+        echo $this->id;
+         echo $this->action->id;
         //创建登录模型对象
         $user_login = new LoginForm;
         
@@ -117,8 +119,100 @@ class UserController extends Controller{
      */
     function actionLogout(){
         //删除session信息
-        Yii::app()->session->clear();  //删除内存里边sessiion变量信息
-        Yii::app()->session->destroy(); //删除服务器的session文件
+        //Yii::app()->session->clear();  //删除内存里边sessiion变量信息
+        //Yii::app()->session->destroy(); //删除服务器的session文件
+        
+        //session和cookie一并删除
+        Yii::app()->user->logout();
+        
         $this->redirect('/');
     }
+
+    
+    /*
+     * session使用
+     */
+    function actionS1(){
+        //设置session,通过session组件来设置
+        Yii::app()->session['username'] = "zhangsan";
+        Yii::app()->session['useraddr'] = "beijing";
+        echo "make session success";
+    }
+    
+    function actionS2(){
+        //使用session
+        echo Yii::app()->session['username'],"<br />";
+        echo Yii::app()->session['useraddr'];
+        echo "use session success";
+    }
+    
+    function actionS3(){
+        //删除一个session
+        // unset(Yii::app()->session['useraddr']);
+        
+        //删除全部session
+        Yii::app()->session->clear();  //删除session变量
+        Yii::app()->session->destroy(); //删除服务器的session信息
+    }
+    
+    /*
+     * cookie在Yii框架使用 
+     */
+    function actionC1(){
+        //设置cookie
+        $ck = new CHttpCookie('hobby','篮球，足球');
+        $ck -> expire = time()+3600;
+        //把$ck对象放入cookie组件里边
+        Yii::app()->request->cookies['hobby'] = $ck;
+        
+        $ck2 = new CHttpCookie('sex','nan');
+        $ck2 -> expire = time()+3600;
+        //把$ck对象放入cookie组件里边
+        Yii::app()->request->cookies['sex'] = $ck2;
+        
+        echo "cookie make success";
+    }
+    function actionC2(){
+        //访问cookie
+        echo Yii::app()->request->cookies['hobby'],"<br />";
+        echo Yii::app()->request->cookies['sex'];
+    }
+    function actionC3(){
+        //删除cookie
+        unset(Yii::app()->request->cookies['sex']);
+    }
+    
+    function actionLu(){
+        //输出路径别名信息/yii就是框架直接可以操作使用的类
+        //Yii::app()　是一个实例，是在当前框架里边唯一可以直接使用的实例对象
+        echo Yii::getPathOfAlias('system');  //D:\www\0507\framework
+        //echo Yii::getPathOfAlias('system.web');  //D:\www\0507\framework\web
+        //echo Yii::getPathOfAlias('application');  //D:\www\0507\shop\protected
+        //echo Yii::getPathOfAlias('zii');  //D:\www\0507\framework\zii
+        //echo Yii::getPathOfAlias('webroot');  //D:/www/0507/shop
+        
+    }
+    function actionAp(){
+        echo Yii::app()->getLayoutPath();
+    }
+
+    /*
+     * 计算脚本执行时间
+     */
+    function actionTime(){
+        //查看脚本开始时间
+        Yii::beginProfile('mytime');
+        for($i=0; $i<=1000; $i++){
+            if($i%7==0)
+                echo "seven<br />";
+            else if($i%8==0)
+                echo "eight<br />";
+            else
+                echo $i."<br />";
+        }
+        Yii::endProfile('mytime');
+    }
+    
+
+
 }

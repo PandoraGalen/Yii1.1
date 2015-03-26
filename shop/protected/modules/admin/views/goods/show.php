@@ -19,7 +19,14 @@
                 </span>
             </span>
         </div>
-        <div></div>
+        <div>
+            <?php
+                //判断是否有提示信息
+                if(Yii::app()->user->hasFlash('success')){
+                    echo Yii::app()->user->getFlash('success');
+                }
+            ?>
+        </div>
         <div class="div_search">
             <span>
                 <form action="#" method="get">

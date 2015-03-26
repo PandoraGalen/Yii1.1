@@ -4,6 +4,29 @@
  */
 class IndexController extends Controller{
     /*
+     * 该控制器里边的方法可以被登录系统用户访问
+     * 没有登陆系统用户禁止访问
+     */
+    function filters() {
+        return array(
+            'accessControl',
+        );
+    }
+    
+    function accessRules() {
+        return array(
+            array(
+                'allow',
+                'actions'=>array('head','left','right','index'),
+                'users'=>array('@'),
+            ),
+            array(
+                'deny',
+                'users'=>array('*'),
+            ),
+        );
+    }
+    /*
      * 生成头部
      */
     function actionHead(){

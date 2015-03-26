@@ -50,8 +50,8 @@
                 </div>
             </div>
             <div id="mainNav" class="clearfix">
-                <a href="#" class="cur">首页<span></span></a>
-                <a href="#">GSM手机<span></span></a>
+                <a href="./"   <?php if($this->id == 'index')echo "class='cur'"; ?>>首页<span></span></a>
+                <a href="./index.php?r=goods/category" <?php if($this->id == 'goods')echo "class='cur'"; ?>>GSM手机<span></span></a>
                 <a href="#">双模手机<span></span></a>
                 <a href="#">汽车配件<span></span></a>
                 <a href="#">优惠活动<span></span></a>

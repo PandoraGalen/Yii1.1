@@ -38,4 +38,21 @@ class Goods extends CActiveRecord{
             'goods_introduce'=>'简介',
         );
     }
+    function getGoodsInfoByPk($id){
+
+        // //把获得的具体详细商品信息存入缓存，下次再来获得信息就去缓存读取
+        // $info = Yii::app()->cache->get('goods_info'.$id);//获得缓存信息
+
+        // //判断缓存信息有无
+        // if(!empty($info))
+        //     return $info;
+                        // var_dump($id);die;
+        $sql = "select * from {{goods}} where goods_id='$id'";
+
+        $goods_info = $this->findBySql($sql);
+        //设置缓存
+        // Yii::app()->cache->set('goods_info'.$id,$goods_info,3600);
+        
+        return $goods_info;
+    }
 }

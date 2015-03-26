@@ -8,6 +8,7 @@
 return array(
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
 	'name'=>'My Web Application',
+	//设置系统默认控制器
 	'defaultController'=>'index',
 	// preloading 'log' component
 	'preload'=>array('log'),
@@ -38,6 +39,7 @@ return array(
 		'user'=>array(
 			// enable cookie-based authentication
 			'allowAutoLogin'=>true,
+			'loginUrl'=>'./index.php?r=user/login',
 		),
 
 		// uncomment the following to enable URLs in path-format
@@ -51,7 +53,8 @@ return array(
 			),
 		),
 		*/
-
+		'cache'=>array(
+			'class' =>'system.caching.CFileCache', ),
 		// database settings are configured in database.php
 		'db'=>require(dirname(__FILE__).'/database.php'),
 
@@ -69,9 +72,9 @@ return array(
 				),
 				// uncomment the following to show log messages on web pages
 				
-				// array(
-				// 	'class'=>'CWebLogRoute',
-				// ),
+				array(
+					'class'=>'CWebLogRoute',
+				),
 				
 			),
 		),

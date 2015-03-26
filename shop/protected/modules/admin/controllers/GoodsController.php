@@ -3,6 +3,58 @@
  * 后台商品管理控制器
  */
 class GoodsController extends Controller {
+    /*
+     * 在当前控制器实现用户访问的控制
+     */
+    function filters() {
+        return array(
+            'accessControl',
+        );
+    }
+    
+    /*
+     * show  add  update  del 等方法在进行访问的时候需要用户登录系统
+     * 为具体方法被访问设置条件
+     */
+    function accessRules() {
+        return array(
+            //用户访问控制扩展
+            //add 方法可以被无条件访问(无论登录与否都可以访问)
+            array(
+                'allow',
+                'actions'=>array('add'),
+                'users'=>array('*'),
+            ),
+            
+            //具体指定"用户"可以删除信息
+            //linken zhangsan  lisi 这个三个用户都可以进行删除操作
+            array(
+                'allow',
+                'actions'=>array('del'),
+                'users' => array('linken','zhangsan','lisi'),
+            ),
+            
+            //匿名用户操作 ?
+            //有的控制器是匿名用户可以访问，已经登录系统用户是禁止访问的
+            //update  这个方法是匿名用户可以访问
+            array(
+                'allow',
+                'actions'=>array('update'),
+                'users'=>array('?'),
+            ),
+            
+            //show 必须是登录系统的用户来访问
+            array(
+                'allow',
+                'actions'=>array('show','show1'),
+                'users'=>array('@'),
+            ),
+            array(
+                'deny',
+                'users'=>array('*'),
+            ),
+        );
+    }
 
 	/*
 	 * 商品展示
@@ -95,8 +147,10 @@ class GoodsController extends Controller {
 
 			//调用save()方法实现数据添加
 			if ($goods_model->save()) {
+                //设置添加商品成功提示信息
+                Yii::app()->user->setFlash('success','添加商品成功');
 				//信息添加成功后实现页面重定向（商品列表页面）
-				$this->redirect('./index.php?r=admin/goods/show');
+				$this->redirect('./index.php?r=admin/goods/show1');
 			}
 		}
 
@@ -125,7 +179,7 @@ class GoodsController extends Controller {
             }
             
             if($goods_info->save())
-                $this->redirect('./index.php?r=admin/goods/show');
+                $this->redirect('./index.php?r=admin/goods/show1');
         }
         //创建数据模型model对象
         //new  Goods()  ;   调用save方法的时候给我们执行insert语句
@@ -147,7 +201,7 @@ class GoodsController extends Controller {
         $goods_info = $goods_model->findByPk($id);  //获得被删除商品的模型对象
         //是谁($goods_info还是$goods_model)调用delete
         if($goods_info->delete())
-            $this->redirect('./index.php?r=admin/goods/show');
+            $this->redirect('./index.php?r=admin/goods/show1');
      }
 
 	/*

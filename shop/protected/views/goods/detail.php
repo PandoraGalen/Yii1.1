@@ -1,7 +1,5 @@
 
 
-
-
         <div class="block clearfix">
             <div class="AreaL">
                 <h3><span>商品分类</span></h3> 
@@ -31,7 +29,7 @@
                     <div class="box_1">
 
                         <div class="boxCenterList clearfix" id="history_list">
-                            <ul class="clearfix"><li class="goodsimg"><a href="#" target="_blank"><img src="<?php echo IMG_URL; ?>8_thumb_G_1241425513488.jpg" alt="飞利浦9@9v" class="B_blue"></a></li><li><a href="#" target="_blank" title="飞利浦9@9v">飞利浦9@9v</a><br />本店售价：<font class="f1">￥399元</font><br /></li></ul><ul class="clearfix"><li class="goodsimg"><a href="#" target="_blank"><img src="<?php echo IMG_URL; ?>9_thumb_G_1241511871555.jpg" alt="诺基亚E66" class="B_blue"></a></li><li><a href="#" target="_blank" title="诺基亚E66">诺基亚E66</a><br />本店售价：<font class="f1">￥2298元</font><br /></li></ul><ul class="clearfix"><li class="goodsimg"><a href="#" target="_blank"><img src="<?php echo IMG_URL; ?>17_thumb_G_1241969394587.jpg" alt="夏新N7" class="B_blue"></a></li><li><a href="#" target="_blank" title="夏新N7">夏新N7</a><br />本店售价：<font class="f1">￥2300元</font><br /></li></ul><ul id="clear_history"><a onclick="clear_history()">[清空]</a></ul>  </div>
+                            <ul class="clearfix"><li class="goodsimg"><a href="#" target="_blank"><img src="<?php echo IMG_URL; ?>8_thumb_G_1241425513488.jpg" alt="飞利浦9@9v" class="B_blue"></a></li><li><a href="#" target="_blank" title="飞利浦9@9v">飞利浦9@9v</a><br />本店售价：<font class="f1">￥399元</font><br /></li></ul><ul class="clearfix"><li class="goodsimg"><a href="#" target="_blank"><img src="<?php echo IMG_URL; ?>9_thumb_G_1241511871555.jpg" alt="<?php echo $goods_info->goods_name; ?>" class="B_blue"></a></li><li><a href="#" target="_blank" title="<?php echo $goods_info->goods_name; ?>"><?php echo $goods_info->goods_name; ?></a><br />本店售价：<font class="f1">￥2298元</font><br /></li></ul><ul class="clearfix"><li class="goodsimg"><a href="#" target="_blank"><img src="<?php echo IMG_URL; ?>17_thumb_G_1241969394587.jpg" alt="夏新N7" class="B_blue"></a></li><li><a href="#" target="_blank" title="夏新N7">夏新N7</a><br />本店售价：<font class="f1">￥2300元</font><br /></li></ul><ul id="clear_history"><a onclick="clear_history()">[清空]</a></ul>  </div>
                     </div>
                 </div>
                 <div class="blank5"></div>
@@ -40,10 +38,10 @@
             <div class="AreaR">
                 <div id="goodsInfo" class="clearfix">
                     <div class="imgInfo">
-                        <a style="position: relative; display: block; outline: 0pt none; text-decoration: none; width: 310px; -moz-user-select: none;" href="<?php echo IMG_URL; ?>200905/goods_img/9_P_1241511871575.jpg" id="zoom1" class="MagicZoom MagicThumb" title="诺基亚E66">
-                            <img id="sim806035" src="<?php echo IMG_URL; ?>9_G_1241511871574.jpg" alt="诺基亚E66" height="310px" width="310px;" />
+                        <a style="position: relative; display: block; outline: 0pt none; text-decoration: none; width: 310px; -moz-user-select: none;" href="<?php echo IMG_URL; ?>200905/goods_img/9_P_1241511871575.jpg" id="zoom1" class="MagicZoom MagicThumb" title="<?php echo $goods_info->goods_name; ?>">
+                            <img id="sim806035" src="<?php echo $goods_info->goods_big_img; ?>" alt="<?php echo $goods_info->goods_name; ?>" height="310px" width="310px;" />
                             <div class="MagicZoomBigImageCont" style="width: 200px; height: 269px; overflow: hidden; z-index: 100; visibility: visible; position: absolute; top: -10000px; left: 327px; display: block;" id="bc806035">
-                                <div style="position: relative; z-index: 10; left: 0px; top: 0px; padding: 3px;" id="MagicZoomHeaderbc806035" class="MagicZoomHeader">诺基亚E66
+                                <div style="position: relative; z-index: 10; left: 0px; top: 0px; padding: 3px;" id="MagicZoomHeaderbc806035" class="MagicZoomHeader"><?php echo $goods_info->goods_name; ?>
                                 </div>
                                 <div style="overflow: hidden;">
                                     <img style="position: relative; border-width: 0px; padding: 0px; left: 0px; top: 0px; display: block; visibility: visible;" src="<?php echo IMG_URL; ?>9_P_1241511871575.jpg" />
@@ -68,14 +66,14 @@
 
                         <div class="picture" id="imglist">
                             <a style="outline: 0pt none;" href="<?php echo IMG_URL; ?>200905/goods_img/9_P_1241511871575.jpg" rel="zoom1" rev="images/200905/goods_img/9_P_1241511871575.jpg" title="">
-                                <img src="<?php echo IMG_URL; ?>9_thumb_P_1241511871787.jpg" alt="诺基亚E66" class="onbg" /></a>
+                                <img src="<?php echo IMG_URL; ?>9_thumb_P_1241511871787.jpg" alt="<?php echo $goods_info->goods_name; ?>" class="onbg" /></a>
                         </div>
                     </div>
 
                     <div class="textInfo">
                         <form action="javascript:addToCart(9)" method="post" name="ECS_FORMBUY" id="ECS_FORMBUY">
                             <div class="clearfix" style="font-size: 14px; font-weight: bold; padding-bottom: 8px;">
-                                诺基亚E66      
+                                <?php echo $goods_info->goods_name; ?>      
                             </div>
                             <ul>
                                 <li class="clearfix">
@@ -86,7 +84,7 @@
                                 <li class="clearfix">
                                     <dd>
                                         <strong>商品库存：</strong>
-                                        4 台             
+                                        <?php echo $goods_info->goods_number; ?> 台             
                                     </dd>
                                 </li>  
                                 <li class="clearfix">
@@ -96,12 +94,12 @@
                                 </li>  
                                 <li class="clearfix">
                                     <dd>
-                                        <strong>商品重量：</strong>121克       
+                                        <strong>商品重量：</strong><?php echo $goods_info->goods_weight; ?>克       
                                     </dd>
                                 </li>
                                 <li class="clearfix">
                                     <dd>
-                                        <strong>上架时间：</strong>2009-05-06      
+                                        <strong>上架时间：</strong><?php echo date('Y-m-d',$goods_info->goods_create_time); ?>      
                                     </dd>
                                 </li>
                                 <li class="clearfix">
@@ -110,11 +108,11 @@
                                 </li>
                                 <li class="clearfix">
                                     <dd>
-                                        <strong>市场价格：</strong><font class="market">￥2758元</font><br />
+                                        <strong>市场价格：</strong><font class="market">￥<?php echo $goods_info->goods_price; ?>元</font><br />
 
-                                        <strong>本店售价：</strong><font class="shop" id="ECS_SHOPPRICE">￥2298元</font><br />
-                                        <strong>注册用户：</strong><font class="shop" id="ECS_RANKPRICE_1">￥2298元</font><br />
-                                        <strong>vip：</strong><font class="shop" id="ECS_RANKPRICE_2">￥2183元</font><br />
+                                        <strong>本店售价：</strong><font class="shop" id="ECS_SHOPPRICE">￥<?php echo $goods_info->goods_price; ?>元</font><br />
+                                        <strong>注册用户：</strong><font class="shop" id="ECS_RANKPRICE_1">￥<?php echo $goods_info->goods_price; ?>元</font><br />
+                                        <strong>vip：</strong><font class="shop" id="ECS_RANKPRICE_2">￥<?php echo $goods_info->goods_price; ?>元</font><br />
                                     </dd>
                                 </li>
                                 <li class="clearfix">
@@ -188,18 +186,18 @@
                             </div>
                         </h3>
                         <div id="com_v" class="boxCenterList RelaArticle">
-                            <p>在机身材质方面，诺基亚E66大量采用金属材质，刨光的金属表面光泽动人，背面的点状效果规则却又不失变化，时尚感总是在不经意间诠释出来，并被人们所感知。E66机身尺寸为<span style="color:red;"><span style="font-size: larger;"><strong>107.5×49.5×13.6毫米，重量为121克</strong></span></span>，滑盖的造型竟然比E71还要轻一些。</p>
+                            <p>在机身材质方面，<?php echo $goods_info->goods_name; ?>大量采用金属材质，刨光的金属表面光泽动人，背面的点状效果规则却又不失变化，时尚感总是在不经意间诠释出来，并被人们所感知。E66机身尺寸为<span style="color:red;"><span style="font-size: larger;"><strong>107.5×49.5×13.6毫米，重量为121克</strong></span></span>，滑盖的造型竟然比E71还要轻一些。</p>
                             <p>&nbsp;</p>
-                            <div>诺基亚E66机身正面是<span style="color:red;"><span style="font-size: larger;"><strong>一块2.4英寸1600万色QVGA分辨率（240×320像素）液晶显示屏</strong></span></span>。屏幕上方拥有光线感应元件，能够自适应周 围环境光调节屏幕亮度；屏幕下方是方向功能键区。打开滑盖，可以看到传统的数字键盘，按键的大小、手感、间隔以及键程适中，手感非常舒适。</div>
+                            <div><?php echo $goods_info->goods_name; ?>机身正面是<span style="color:red;"><span style="font-size: larger;"><strong>一块2.4英寸1600万色QVGA分辨率（240×320像素）液晶显示屏</strong></span></span>。屏幕上方拥有光线感应元件，能够自适应周 围环境光调节屏幕亮度；屏幕下方是方向功能键区。打开滑盖，可以看到传统的数字键盘，按键的大小、手感、间隔以及键程适中，手感非常舒适。</div>
                             <div>&nbsp;</div>
                             <div>诺基亚为E66配备了一颗320万像素自动对焦摄像头，带有LED 闪光灯，支持多种拍照尺寸选择。</div>
                             <p>&nbsp;</p>       
                         </div>
                         <div class="none" id="com_h">
                             <blockquote>
-                                <p>在机身材质方面，诺基亚E66大量采用金属材质，刨光的金属表面光泽动人，背面的点状效果规则却又不失变化，时尚感总是在不经意间诠释出来，并被人们所感知。E66机身尺寸为<span style="color:red;"><span style="font-size: larger;"><strong>107.5×49.5×13.6毫米，重量为121克</strong></span></span>，滑盖的造型竟然比E71还要轻一些。</p>
+                                <p>在机身材质方面，<?php echo $goods_info->goods_name; ?>大量采用金属材质，刨光的金属表面光泽动人，背面的点状效果规则却又不失变化，时尚感总是在不经意间诠释出来，并被人们所感知。E66机身尺寸为<span style="color:red;"><span style="font-size: larger;"><strong>107.5×49.5×13.6毫米，重量为121克</strong></span></span>，滑盖的造型竟然比E71还要轻一些。</p>
                                 <p>&nbsp;</p>
-                                <div>诺基亚E66机身正面是<span style="color:red;"><span style="font-size: larger;"><strong>一块2.4英寸1600万色QVGA分辨率（240×320像素）液晶显示屏</strong></span></span>。屏幕上方拥有光线感应元件，能够自适应周 围环境光调节屏幕亮度；屏幕下方是方向功能键区。打开滑盖，可以看到传统的数字键盘，按键的大小、手感、间隔以及键程适中，手感非常舒适。</div>
+                                <div><?php echo $goods_info->goods_name; ?>机身正面是<span style="color:red;"><span style="font-size: larger;"><strong>一块2.4英寸1600万色QVGA分辨率（240×320像素）液晶显示屏</strong></span></span>。屏幕上方拥有光线感应元件，能够自适应周 围环境光调节屏幕亮度；屏幕下方是方向功能键区。打开滑盖，可以看到传统的数字键盘，按键的大小、手感、间隔以及键程适中，手感非常舒适。</div>
                                 <div>&nbsp;</div>
                                 <div>诺基亚为E66配备了一颗320万像素自动对焦摄像头，带有LED 闪光灯，支持多种拍照尺寸选择。</div>
                                 <p>&nbsp;</p>       </blockquote>
