@@ -9,18 +9,17 @@ class GoodsController extends Controller {
      *  accessControl 是方法过滤器
      *  array()       是类过滤器
      */
-    function filters(){
-        return array(
+    //update sw_goods set goods_big_img = concat('/',goods_big_img);
             //'accessControl',  方法过滤器
             //类过滤器 实现页面整体缓存 COutputCache.php
             //只针对detail进行页面缓存
-            array(
-                'system.web.widgets.COutputCache + detail',
-                'duration'=>1800,
-                'varyByParam'=>array('id'),
-            ),
-        );
-    }
+    //         array(
+    //             'system.web.widgets.COutputCache + detail',
+    //             'duration'=>1800,
+    //             'varyByParam'=>array('id'),
+    //         ),
+    //     );
+    // }
     
     
     /*
@@ -93,5 +92,6 @@ class GoodsController extends Controller {
         //清空缓存变量，也可以删除片段缓存或文件缓存
         Yii::app()->cache->flush();
     }
+
     
 }

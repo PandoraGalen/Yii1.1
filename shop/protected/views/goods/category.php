@@ -146,14 +146,14 @@
                          * varyByParam 缓存变化
                          * dependency 缓存依赖
                          */
-                        if($this->beginCache('goods',array(
-                            'duration'=>3600,
-                            'varyByParam' => array('page'),
-                            'dependency' =>array(
-                                'class'=>'system.caching.dependencies.CDbCacheDependency',
-                                'sql'=>'select sum(goods_price) from {{goods}}',
-                            )
-                        ))){
+                        // if($this->beginCache('goods',array(
+                        //     'duration'=>3600,
+                        //     'varyByParam' => array('page'),
+                        //     'dependency' =>array(
+                        //         'class'=>'system.caching.dependencies.CDbCacheDependency',
+                        //         'sql'=>'select sum(goods_price) from {{goods}}',
+                        //     )
+                        // ))){
                         ?>
                         <?php
                         foreach($goods_infos as $_v){
@@ -170,7 +170,7 @@
                         <?php
                         }
                         ?>
-                        <?php $this -> endCache();} ?>
+                         <?php //$this -> endCache();} ?>
                         
                         
                     </div>

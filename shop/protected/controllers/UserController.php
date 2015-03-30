@@ -31,8 +31,8 @@ class UserController extends Controller{
      *用户登录 
      */
     function actionLogin(){
-        echo $this->id;
-         echo $this->action->id;
+        // echo $this->id;
+        //  echo $this->action->id;
         //创建登录模型对象
         $user_login = new LoginForm;
         

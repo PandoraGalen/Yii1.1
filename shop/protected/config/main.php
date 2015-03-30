@@ -12,7 +12,9 @@ return array(
 	'defaultController'=>'index',
 	// preloading 'log' component
 	'preload'=>array('log'),
-
+    //配置主题theme
+    'theme'=>'children',
+    
 	// autoloading model and component classes
 	'import'=>array(
 		'application.models.*',
@@ -43,16 +45,37 @@ return array(
 		),
 
 		// uncomment the following to enable URLs in path-format
-		/*
-		'urlManager'=>array(
-			'urlFormat'=>'path',
-			'rules'=>array(
-				'<controller:\w+>/<id:\d+>'=>'<controller>/view',
-				'<controller:\w+>/<action:\w+>/<id:\d+>'=>'<controller>/<action>',
-				'<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
-			),
-		),
-		*/
+
+//		'urlManager'=>array(
+//                    'urlFormat'=>'path',
+//                    'rules'=>array(
+//                        //user/login.html ===> user/login
+//                        'user/login'=>array('user/login','urlSuffix'=>'.html'),
+//
+//                        //user/register.html  ===>  user/register
+//                        'user/register'=>array('user/register','urlSuffix'=>'.html'),
+//
+//                        //goods/20   ====>  goods/detail&id=20
+//                        'goods/<id:\d+>' => 'goods/detail',
+//
+//                        //goods/20/zhangsan  ===> goods/category&id=20&name=zhangsan
+//                        'goods/<id:\d+>/<name:[a-z]+>'=>'goods/category',
+//
+//                        //goods/4-2-3-5.html  ===> goods/category&brand=4&price2&color=3&screen=5
+//                        'goods/<brand:\d+>-<price:\d+>-<color:\d+>-<screen:\d+>'=>array('goods/category','urlSuffix'=>'.html'),
+//                    ),
+//		),
+
+
+		// 'urlManager'=>array(
+		// 	'urlFormat'=>'path',
+		// 	'rules'=>array(
+		// 		'<controller:\w+>/<id:\d+>'=>'<controller>/view',
+		// 		'<controller:\w+>/<action:\w+>/<id:\d+>'=>'<controller>/<action>',
+		// 		'<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
+		// 	),
+		// ),
+		
 		'cache'=>array(
 			'class' =>'system.caching.CFileCache', ),
 		// database settings are configured in database.php

@@ -4854,3 +4854,304 @@ Stack trace:
 #5 {main}
 REQUEST_URI=/index.php?r=index/detail
 ---
+2015/03/30 16:13:43 [error] [php] call_user_func_array() expects parameter 1 to be a valid callback, function 'show_name' not found or invalid function name (F:\upupw\htdocs\Yii1.1\framework\web\CController.php:943)
+Stack trace:
+#0 F:\upupw\htdocs\Yii1.1\shop\protected\views\layouts\shop.php(36): IndexController->renderDynamic()
+#1 F:\upupw\htdocs\Yii1.1\framework\web\CBaseController.php(126): require()
+#2 F:\upupw\htdocs\Yii1.1\framework\web\CBaseController.php(95): IndexController->renderInternal()
+#3 F:\upupw\htdocs\Yii1.1\framework\web\CController.php(784): IndexController->renderFile()
+#4 F:\upupw\htdocs\Yii1.1\shop\protected\controllers\IndexController.php(12): IndexController->render()
+#5 F:\upupw\htdocs\Yii1.1\framework\web\actions\CInlineAction.php(49): IndexController->actionIndex()
+#6 F:\upupw\htdocs\Yii1.1\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 F:\upupw\htdocs\Yii1.1\framework\web\CController.php(286): IndexController->runAction()
+#8 F:\upupw\htdocs\Yii1.1\framework\web\CController.php(265): IndexController->runActionWithFilters()
+#9 F:\upupw\htdocs\Yii1.1\framework\web\CWebApplication.php(282): IndexController->run()
+#10 F:\upupw\htdocs\Yii1.1\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#11 F:\upupw\htdocs\Yii1.1\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#12 F:\upupw\htdocs\Yii1.1\shop\index.php(25): CWebApplication->run()
+REQUEST_URI=/index.php
+in F:\upupw\htdocs\Yii1.1\shop\protected\views\layouts\shop.php (36)
+in F:\upupw\htdocs\Yii1.1\shop\protected\controllers\IndexController.php (12)
+in F:\upupw\htdocs\Yii1.1\shop\index.php (25)
+2015/03/30 16:33:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in F:\upupw\htdocs\Yii1.1\framework\web\CController.php:483
+Stack trace:
+#0 F:\upupw\htdocs\Yii1.1\framework\web\CController.php(270): CController->missingAction('images')
+#1 F:\upupw\htdocs\Yii1.1\framework\web\CWebApplication.php(282): CController->run('images')
+#2 F:\upupw\htdocs\Yii1.1\framework\web\CWebApplication.php(141): CWebApplication->runController('goods/images/20...')
+#3 F:\upupw\htdocs\Yii1.1\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 F:\upupw\htdocs\Yii1.1\shop\index.php(25): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/goods/images/200905/goods_img/1_G_1240902890755.jpg
+HTTP_REFERER=http://yiishop.local/index.php/goods/category
+---
+2015/03/30 16:33:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in F:\upupw\htdocs\Yii1.1\framework\web\CController.php:483
+Stack trace:
+#0 F:\upupw\htdocs\Yii1.1\framework\web\CController.php(270): CController->missingAction('images')
+#1 F:\upupw\htdocs\Yii1.1\framework\web\CWebApplication.php(282): CController->run('images')
+#2 F:\upupw\htdocs\Yii1.1\framework\web\CWebApplication.php(141): CWebApplication->runController('goods/images/20...')
+#3 F:\upupw\htdocs\Yii1.1\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 F:\upupw\htdocs\Yii1.1\shop\index.php(25): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/goods/images/200905/goods_img/32_G_1242110760868.jpg
+HTTP_REFERER=http://yiishop.local/index.php/goods/category
+---
+2015/03/30 16:33:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in F:\upupw\htdocs\Yii1.1\framework\web\CController.php:483
+Stack trace:
+#0 F:\upupw\htdocs\Yii1.1\framework\web\CController.php(270): CController->missingAction('images')
+#1 F:\upupw\htdocs\Yii1.1\framework\web\CWebApplication.php(282): CController->run('images')
+#2 F:\upupw\htdocs\Yii1.1\framework\web\CWebApplication.php(141): CWebApplication->runController('goods/images/20...')
+#3 F:\upupw\htdocs\Yii1.1\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 F:\upupw\htdocs\Yii1.1\shop\index.php(25): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/goods/images/200905/goods_img/4_G_1241422402722.jpg
+HTTP_REFERER=http://yiishop.local/index.php/goods/category
+---
+2015/03/30 16:33:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in F:\upupw\htdocs\Yii1.1\framework\web\CController.php:483
+Stack trace:
+#0 F:\upupw\htdocs\Yii1.1\framework\web\CController.php(270): CController->missingAction('images')
+#1 F:\upupw\htdocs\Yii1.1\framework\web\CWebApplication.php(282): CController->run('images')
+#2 F:\upupw\htdocs\Yii1.1\framework\web\CWebApplication.php(141): CWebApplication->runController('goods/images/20...')
+#3 F:\upupw\htdocs\Yii1.1\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 F:\upupw\htdocs\Yii1.1\shop\index.php(25): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/goods/images/200905/goods_img/5_G_1241422518773.jpg
+HTTP_REFERER=http://yiishop.local/index.php/goods/category
+---
+2015/03/30 16:33:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in F:\upupw\htdocs\Yii1.1\framework\web\CController.php:483
+Stack trace:
+#0 F:\upupw\htdocs\Yii1.1\framework\web\CController.php(270): CController->missingAction('images')
+#1 F:\upupw\htdocs\Yii1.1\framework\web\CWebApplication.php(282): CController->run('images')
+#2 F:\upupw\htdocs\Yii1.1\framework\web\CWebApplication.php(141): CWebApplication->runController('goods/images/20...')
+#3 F:\upupw\htdocs\Yii1.1\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 F:\upupw\htdocs\Yii1.1\shop\index.php(25): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/goods/images/200905/goods_img/7_G_1241422785856.jpg
+HTTP_REFERER=http://yiishop.local/index.php/goods/category
+---
+2015/03/30 16:33:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in F:\upupw\htdocs\Yii1.1\framework\web\CController.php:483
+Stack trace:
+#0 F:\upupw\htdocs\Yii1.1\framework\web\CController.php(270): CController->missingAction('images')
+#1 F:\upupw\htdocs\Yii1.1\framework\web\CWebApplication.php(282): CController->run('images')
+#2 F:\upupw\htdocs\Yii1.1\framework\web\CWebApplication.php(141): CWebApplication->runController('goods/images/20...')
+#3 F:\upupw\htdocs\Yii1.1\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 F:\upupw\htdocs\Yii1.1\shop\index.php(25): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/goods/images/200905/goods_img/3_G_1241422082168.jpg
+HTTP_REFERER=http://yiishop.local/index.php/goods/category
+---
+2015/03/30 16:33:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in F:\upupw\htdocs\Yii1.1\framework\web\CController.php:483
+Stack trace:
+#0 F:\upupw\htdocs\Yii1.1\framework\web\CController.php(270): CController->missingAction('images')
+#1 F:\upupw\htdocs\Yii1.1\framework\web\CWebApplication.php(282): CController->run('images')
+#2 F:\upupw\htdocs\Yii1.1\framework\web\CWebApplication.php(141): CWebApplication->runController('goods/images/20...')
+#3 F:\upupw\htdocs\Yii1.1\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 F:\upupw\htdocs\Yii1.1\shop\index.php(25): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/goods/images/200905/goods_img/8_G_1241425513055.jpg
+HTTP_REFERER=http://yiishop.local/index.php/goods/category
+---
+2015/03/30 16:33:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in F:\upupw\htdocs\Yii1.1\framework\web\CController.php:483
+Stack trace:
+#0 F:\upupw\htdocs\Yii1.1\framework\web\CController.php(270): CController->missingAction('images')
+#1 F:\upupw\htdocs\Yii1.1\framework\web\CWebApplication.php(282): CController->run('images')
+#2 F:\upupw\htdocs\Yii1.1\framework\web\CWebApplication.php(141): CWebApplication->runController('goods/images/20...')
+#3 F:\upupw\htdocs\Yii1.1\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 F:\upupw\htdocs\Yii1.1\shop\index.php(25): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/goods/images/200905/goods_img/32_G_1242110760868.jpg
+HTTP_REFERER=http://yiishop.local/index.php/goods/category
+---
+2015/03/30 16:33:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in F:\upupw\htdocs\Yii1.1\framework\web\CController.php:483
+Stack trace:
+#0 F:\upupw\htdocs\Yii1.1\framework\web\CController.php(270): CController->missingAction('images')
+#1 F:\upupw\htdocs\Yii1.1\framework\web\CWebApplication.php(282): CController->run('images')
+#2 F:\upupw\htdocs\Yii1.1\framework\web\CWebApplication.php(141): CWebApplication->runController('goods/images/20...')
+#3 F:\upupw\htdocs\Yii1.1\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 F:\upupw\htdocs\Yii1.1\shop\index.php(25): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/goods/images/200905/goods_img/1_G_1240902890755.jpg
+HTTP_REFERER=http://yiishop.local/index.php/goods/category
+---
+2015/03/30 16:33:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in F:\upupw\htdocs\Yii1.1\framework\web\CController.php:483
+Stack trace:
+#0 F:\upupw\htdocs\Yii1.1\framework\web\CController.php(270): CController->missingAction('images')
+#1 F:\upupw\htdocs\Yii1.1\framework\web\CWebApplication.php(282): CController->run('images')
+#2 F:\upupw\htdocs\Yii1.1\framework\web\CWebApplication.php(141): CWebApplication->runController('goods/images/20...')
+#3 F:\upupw\htdocs\Yii1.1\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 F:\upupw\htdocs\Yii1.1\shop\index.php(25): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/goods/images/200905/goods_img/3_G_1241422082168.jpg
+HTTP_REFERER=http://yiishop.local/index.php/goods/category
+---
+2015/03/30 16:33:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in F:\upupw\htdocs\Yii1.1\framework\web\CController.php:483
+Stack trace:
+#0 F:\upupw\htdocs\Yii1.1\framework\web\CController.php(270): CController->missingAction('images')
+#1 F:\upupw\htdocs\Yii1.1\framework\web\CWebApplication.php(282): CController->run('images')
+#2 F:\upupw\htdocs\Yii1.1\framework\web\CWebApplication.php(141): CWebApplication->runController('goods/images/20...')
+#3 F:\upupw\htdocs\Yii1.1\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 F:\upupw\htdocs\Yii1.1\shop\index.php(25): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/goods/images/200905/goods_img/4_G_1241422402722.jpg
+HTTP_REFERER=http://yiishop.local/index.php/goods/category
+---
+2015/03/30 16:33:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in F:\upupw\htdocs\Yii1.1\framework\web\CController.php:483
+Stack trace:
+#0 F:\upupw\htdocs\Yii1.1\framework\web\CController.php(270): CController->missingAction('images')
+#1 F:\upupw\htdocs\Yii1.1\framework\web\CWebApplication.php(282): CController->run('images')
+#2 F:\upupw\htdocs\Yii1.1\framework\web\CWebApplication.php(141): CWebApplication->runController('goods/images/20...')
+#3 F:\upupw\htdocs\Yii1.1\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 F:\upupw\htdocs\Yii1.1\shop\index.php(25): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/goods/images/200905/goods_img/5_G_1241422518773.jpg
+HTTP_REFERER=http://yiishop.local/index.php/goods/category
+---
+2015/03/30 16:33:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in F:\upupw\htdocs\Yii1.1\framework\web\CController.php:483
+Stack trace:
+#0 F:\upupw\htdocs\Yii1.1\framework\web\CController.php(270): CController->missingAction('images')
+#1 F:\upupw\htdocs\Yii1.1\framework\web\CWebApplication.php(282): CController->run('images')
+#2 F:\upupw\htdocs\Yii1.1\framework\web\CWebApplication.php(141): CWebApplication->runController('goods/images/20...')
+#3 F:\upupw\htdocs\Yii1.1\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 F:\upupw\htdocs\Yii1.1\shop\index.php(25): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/goods/images/200905/goods_img/7_G_1241422785856.jpg
+HTTP_REFERER=http://yiishop.local/index.php/goods/category
+---
+2015/03/30 16:33:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in F:\upupw\htdocs\Yii1.1\framework\web\CController.php:483
+Stack trace:
+#0 F:\upupw\htdocs\Yii1.1\framework\web\CController.php(270): CController->missingAction('images')
+#1 F:\upupw\htdocs\Yii1.1\framework\web\CWebApplication.php(282): CController->run('images')
+#2 F:\upupw\htdocs\Yii1.1\framework\web\CWebApplication.php(141): CWebApplication->runController('goods/images/20...')
+#3 F:\upupw\htdocs\Yii1.1\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 F:\upupw\htdocs\Yii1.1\shop\index.php(25): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/goods/images/200905/goods_img/8_G_1241425513055.jpg
+HTTP_REFERER=http://yiishop.local/index.php/goods/category
+---
+2015/03/30 16:33:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in F:\upupw\htdocs\Yii1.1\framework\web\CController.php:483
+Stack trace:
+#0 F:\upupw\htdocs\Yii1.1\framework\web\CController.php(270): CController->missingAction('images')
+#1 F:\upupw\htdocs\Yii1.1\framework\web\CWebApplication.php(282): CController->run('images')
+#2 F:\upupw\htdocs\Yii1.1\framework\web\CWebApplication.php(141): CWebApplication->runController('goods/images/20...')
+#3 F:\upupw\htdocs\Yii1.1\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 F:\upupw\htdocs\Yii1.1\shop\index.php(25): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/goods/images/200905/goods_img/9_G_1241511871574.jpg
+HTTP_REFERER=http://yiishop.local/index.php/goods/category?&page=2
+---
+2015/03/30 16:33:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in F:\upupw\htdocs\Yii1.1\framework\web\CController.php:483
+Stack trace:
+#0 F:\upupw\htdocs\Yii1.1\framework\web\CController.php(270): CController->missingAction('images')
+#1 F:\upupw\htdocs\Yii1.1\framework\web\CWebApplication.php(282): CController->run('images')
+#2 F:\upupw\htdocs\Yii1.1\framework\web\CWebApplication.php(141): CWebApplication->runController('goods/images/20...')
+#3 F:\upupw\htdocs\Yii1.1\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 F:\upupw\htdocs\Yii1.1\shop\index.php(25): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/goods/images/200905/goods_img/10_G_1242973436141.jpg
+HTTP_REFERER=http://yiishop.local/index.php/goods/category?&page=2
+---
+2015/03/30 16:33:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in F:\upupw\htdocs\Yii1.1\framework\web\CController.php:483
+Stack trace:
+#0 F:\upupw\htdocs\Yii1.1\framework\web\CController.php(270): CController->missingAction('images')
+#1 F:\upupw\htdocs\Yii1.1\framework\web\CWebApplication.php(282): CController->run('images')
+#2 F:\upupw\htdocs\Yii1.1\framework\web\CWebApplication.php(141): CWebApplication->runController('goods/images/20...')
+#3 F:\upupw\htdocs\Yii1.1\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 F:\upupw\htdocs\Yii1.1\shop\index.php(25): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/goods/images/200905/goods_img/12_G_1241965978209.jpg
+HTTP_REFERER=http://yiishop.local/index.php/goods/category?&page=2
+---
+2015/03/30 16:33:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in F:\upupw\htdocs\Yii1.1\framework\web\CController.php:483
+Stack trace:
+#0 F:\upupw\htdocs\Yii1.1\framework\web\CController.php(270): CController->missingAction('images')
+#1 F:\upupw\htdocs\Yii1.1\framework\web\CWebApplication.php(282): CController->run('images')
+#2 F:\upupw\htdocs\Yii1.1\framework\web\CWebApplication.php(141): CWebApplication->runController('goods/images/20...')
+#3 F:\upupw\htdocs\Yii1.1\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 F:\upupw\htdocs\Yii1.1\shop\index.php(25): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/goods/images/200905/goods_img/14_G_1241968492932.jpg
+HTTP_REFERER=http://yiishop.local/index.php/goods/category?&page=2
+---
+2015/03/30 16:33:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in F:\upupw\htdocs\Yii1.1\framework\web\CController.php:483
+Stack trace:
+#0 F:\upupw\htdocs\Yii1.1\framework\web\CController.php(270): CController->missingAction('images')
+#1 F:\upupw\htdocs\Yii1.1\framework\web\CWebApplication.php(282): CController->run('images')
+#2 F:\upupw\htdocs\Yii1.1\framework\web\CWebApplication.php(141): CWebApplication->runController('goods/images/20...')
+#3 F:\upupw\htdocs\Yii1.1\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 F:\upupw\htdocs\Yii1.1\shop\index.php(25): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/goods/images/200905/goods_img/13_G_1241968002233.jpg
+HTTP_REFERER=http://yiishop.local/index.php/goods/category?&page=2
+---
+2015/03/30 16:33:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in F:\upupw\htdocs\Yii1.1\framework\web\CController.php:483
+Stack trace:
+#0 F:\upupw\htdocs\Yii1.1\framework\web\CController.php(270): CController->missingAction('images')
+#1 F:\upupw\htdocs\Yii1.1\framework\web\CWebApplication.php(282): CController->run('images')
+#2 F:\upupw\htdocs\Yii1.1\framework\web\CWebApplication.php(141): CWebApplication->runController('goods/images/20...')
+#3 F:\upupw\htdocs\Yii1.1\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 F:\upupw\htdocs\Yii1.1\shop\index.php(25): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/goods/images/200905/goods_img/15_G_1242973362318.jpg
+HTTP_REFERER=http://yiishop.local/index.php/goods/category?&page=2
+---
+2015/03/30 16:33:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in F:\upupw\htdocs\Yii1.1\framework\web\CController.php:483
+Stack trace:
+#0 F:\upupw\htdocs\Yii1.1\framework\web\CController.php(270): CController->missingAction('images')
+#1 F:\upupw\htdocs\Yii1.1\framework\web\CWebApplication.php(282): CController->run('images')
+#2 F:\upupw\htdocs\Yii1.1\framework\web\CWebApplication.php(141): CWebApplication->runController('goods/images/20...')
+#3 F:\upupw\htdocs\Yii1.1\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 F:\upupw\htdocs\Yii1.1\shop\index.php(25): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/goods/images/200905/goods_img/16_G_1241968949002.jpg
+HTTP_REFERER=http://yiishop.local/index.php/goods/category?&page=2
+---
+2015/03/30 17:24:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "444".' in F:\upupw\htdocs\Yii1.1\framework\web\CWebApplication.php:286
+Stack trace:
+#0 F:\upupw\htdocs\Yii1.1\framework\web\CWebApplication.php(141): CWebApplication->runController('444')
+#1 F:\upupw\htdocs\Yii1.1\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 F:\upupw\htdocs\Yii1.1\shop\index.php(25): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php?r=444
+---
+2015/03/30 17:25:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "444".' in F:\upupw\htdocs\Yii1.1\framework\web\CWebApplication.php:286
+Stack trace:
+#0 F:\upupw\htdocs\Yii1.1\framework\web\CWebApplication.php(141): CWebApplication->runController('444')
+#1 F:\upupw\htdocs\Yii1.1\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 F:\upupw\htdocs\Yii1.1\shop\index.php(25): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php?r=444
+---
+2015/03/30 17:39:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "444".' in F:\upupw\htdocs\Yii1.1\framework\web\CWebApplication.php:286
+Stack trace:
+#0 F:\upupw\htdocs\Yii1.1\framework\web\CWebApplication.php(141): CWebApplication->runController('444')
+#1 F:\upupw\htdocs\Yii1.1\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 F:\upupw\htdocs\Yii1.1\shop\index.php(25): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php?r=444
+---
+2015/03/30 17:39:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "444".' in F:\upupw\htdocs\Yii1.1\framework\web\CWebApplication.php:286
+Stack trace:
+#0 F:\upupw\htdocs\Yii1.1\framework\web\CWebApplication.php(141): CWebApplication->runController('444')
+#1 F:\upupw\htdocs\Yii1.1\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 F:\upupw\htdocs\Yii1.1\shop\index.php(25): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php?r=444
+---
+2015/03/30 17:39:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "444".' in F:\upupw\htdocs\Yii1.1\framework\web\CWebApplication.php:286
+Stack trace:
+#0 F:\upupw\htdocs\Yii1.1\framework\web\CWebApplication.php(141): CWebApplication->runController('444')
+#1 F:\upupw\htdocs\Yii1.1\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 F:\upupw\htdocs\Yii1.1\shop\index.php(25): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php?r=444
+---
+2015/03/30 17:56:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "center".' in F:\upupw\htdocs\Yii1.1\framework\web\CController.php:483
+Stack trace:
+#0 F:\upupw\htdocs\Yii1.1\framework\web\CController.php(270): CController->missingAction('center')
+#1 F:\upupw\htdocs\Yii1.1\framework\web\CWebApplication.php(282): CController->run('center')
+#2 F:\upupw\htdocs\Yii1.1\framework\web\CWebApplication.php(141): CWebApplication->runController('user/center')
+#3 F:\upupw\htdocs\Yii1.1\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 F:\upupw\htdocs\Yii1.1\shop\index.php(25): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=user/center
+HTTP_REFERER=http://yiishop.local/index.php?r=user/login
+---

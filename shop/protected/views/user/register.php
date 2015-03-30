@@ -1,3 +1,10 @@
+<?php
+    //定义面包屑变量
+    $this -> breadcrumbs = array(
+        '用户中心'=>array('user/center'),
+        '用户注册'=>array('user/register'),
+    );
+?>
          <!--放入view具体内容-->
 
             <div class="block box">

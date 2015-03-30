@@ -1,3 +1,11 @@
+<?php
+    //定义面包屑变量
+    $this -> breadcrumbs = array(
+        '用户中心'=>array('user/center'),
+        '用户登录'=>array('user/login'),
+    );
+?>
+
 <style type="text/css">
     div .errorMessage{color:red;}
     label  .required {color:red;}
